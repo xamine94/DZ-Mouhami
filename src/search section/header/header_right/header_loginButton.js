@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function LoginButton(){
     
     const butStyle={
@@ -15,9 +17,11 @@ function LoginButton(){
     }
 
     const login="Login"
-    return <button style={butStyle}>
+    return <Link to="/Login">
+        <button style={butStyle}>
        {login}
     </button>
+        </Link>
 }
 
 export default LoginButton;
